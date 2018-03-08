@@ -1,10 +1,37 @@
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
+.imageGrid {
+  line-height: 0;
+}
+.imageGrid .tile {
+  width:25%;
+  min-height:20em;
+  line-height: 1.5;
+  display:inline-block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  
+}
+.imageGrid .tile:before {
+  content: '';
+  background-color: rgba(15,15,15,0.5);
+  display: block;
+  width: 15%;
+  height: 15%;
+  z-index: 0;
+  position: absolute;
 }
 
-.column img{
-  display: flex;
-  display: grid;
+@media (max-width: 200px) {
+  .imageGrid .tile {
+    width: 20%;
+  }
+}
+ 
+@media (max-width: 200px) {
+  .imageGrid .tile {
+    width: 50%;
+  }
+  
 }
