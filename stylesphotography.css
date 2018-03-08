@@ -1,4 +1,10 @@
-.column {
+.row {
   display: flex;
   flex-wrap: wrap;
+  padding: 10px;
+}
+
+.column img{
+  display: flex;
+  display: grid;
 }
